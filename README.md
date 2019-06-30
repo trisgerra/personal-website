@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/trisgerra/personal-website.svg?branch=master)](https://travis-ci.org/trisgerra/personal-website)
+[![Coverage Status](https://coveralls.io/repos/github/trisgerra/personal-website/badge.svg?branch=master)](https://coveralls.io/github/trisgerra/personal-website?branch=master)
 # personal-blog
 Just to play a bit with some things, and maybe, one day, i will create a simple portfolio.
 
