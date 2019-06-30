@@ -34,4 +34,13 @@ module.exports = {
       babelConfig: true,
     },
   },
+  collectCoverage: true,
+  collectCoverageFrom: ['**/*.{vue}',
+    '!**/node_modules/**',
+    '!<rootDir>/dist/**',
+    '!<rootDir>/src/plugins/**',
+    '!<rootDir>/tests/unit/**',
+    '!<rootDir>/**/__tests__/*.spec.**',
+  ],
+  coverageReporters: ['lcov', 'text-summary'],
 };
