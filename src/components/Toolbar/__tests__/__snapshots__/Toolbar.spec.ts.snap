@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toolbar should render as expected 1`] = `
+<nav
+  class="v-toolbar v-toolbar--fixed theme--light"
+  style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);"
+>
+  <div
+    class="v-toolbar__content"
+    style="height: 64px;"
+  >
+    <div
+      class="v-toolbar__title headline text-uppercase"
+    >
+      <img
+        class="logo"
+        src="../../assets/logo.png"
+        width="63px"
+      />
+    </div>
+     
+    <div
+      class="spacer"
+    />
+  </div>
+</nav>
+`;

@@ -2,21 +2,50 @@
 
 exports[`App should render as expected 1`] = `
 <div
+  class="application theme--light"
+  data-app="true"
   id="app"
 >
   <div
-    id="nav"
+    class="application--wrap"
   >
-    <a
-      class="router-link-exact-active router-link-active"
-      href="#/"
+    <nav
+      class="v-toolbar v-toolbar--fixed theme--light"
+      style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);"
     >
-      Home
-    </a>
+      <div
+        class="v-toolbar__content"
+        style="height: 64px;"
+      >
+        <div
+          class="v-toolbar__title headline text-uppercase"
+        >
+          <img
+            class="logo"
+            src="../../assets/logo.png"
+            width="63px"
+          />
+        </div>
+         
+        <div
+          class="spacer"
+        />
+      </div>
+    </nav>
+     
+    <main
+      class="v-content"
+      id="content"
+      style="padding: 64px 0px 0px 0px;"
+    >
+      <div
+        class="v-content__wrap"
+      >
+        
+    Hello
+  
+      </div>
+    </main>
   </div>
-   
-  <div
-    class="home"
-  />
 </div>
 `;
