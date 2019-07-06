@@ -4,16 +4,72 @@ exports[`App should render as expected 1`] = `
 <div
   id="app"
 >
-  <div
-    id="nav"
+  <nav
+    aria-label="main navigation"
+    class="navbar"
+    role="navigation"
   >
-    <a
-      class="router-link-exact-active router-link-active"
-      href="#/"
+    <div
+      class="navbar-brand"
     >
-      Home
-    </a>
-  </div>
+      <a
+        class="menu-item router-link-exact-active router-link-active"
+        href="#/"
+      >
+        <img
+          alt="ADG Official"
+          class="logo"
+          height="38"
+          src="../../assets/logo.png"
+        />
+      </a>
+       
+      <a
+        aria-expanded="false"
+        aria-label="menu"
+        class="navbar-burger"
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+        />
+         
+        <span
+          aria-hidden="true"
+        />
+         
+        <span
+          aria-hidden="true"
+        />
+      </a>
+    </div>
+     
+    <div
+      class="navbar-menu"
+    >
+      <div
+        class="navbar-start"
+      >
+        <a
+          class="navbar-item"
+        >
+          Blog
+        </a>
+         
+        <a
+          class="navbar-item"
+        >
+          Design
+        </a>
+         
+        <a
+          class="navbar-item"
+        >
+          Projects
+        </a>
+      </div>
+    </div>
+  </nav>
    
   <div
     class="home"
