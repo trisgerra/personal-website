@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Design should render as expected 1`] = `
+<div
+  class="blog"
+>
+  
+  Blog
+
+</div>
+`;
