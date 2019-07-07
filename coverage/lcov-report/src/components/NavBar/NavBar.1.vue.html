@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for components/NavBar/NavBar.vue</title>
+    <title>Code coverage report for src/components/NavBar/NavBar.1.vue</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../prettify.css" />
-    <link rel="stylesheet" href="../../base.css" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../sort-arrow-sprite.png);
+            background-image: url(../../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -16,13 +16,13 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../index.html">All files</a> / <a href="index.html">components/NavBar</a> NavBar.vue
+      <a href="../../../index.html">All files</a> / <a href="index.html">src/components/NavBar</a> NavBar.1.vue
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">88.89% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>8/9</span>
+        <span class='fraction'>0/7</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
@@ -30,18 +30,18 @@
         <span class='fraction'>0/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">66.67% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>2/3</span>
+        <span class='fraction'>0/3</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">87.5% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>7/8</span>
+        <span class='fraction'>0/7</span>
       </div>
     </div>
   </div>
-  <div class='status-line high'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -114,7 +114,13 @@
 69
 70
 71
-72</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+72
+73
+74
+75
+76
+77
+78</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -134,22 +140,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -185,9 +196,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
   &lt;nav class="navbar" role="navigation" aria-label="main navigation"&gt;
-    &lt;navigation-brand :switch-active="this.switchActive"&gt;&lt;/navigation-brand&gt;
+    &lt;div class="navbar-brand"&gt;
+      &lt;router-link class="menu-item" to="/"&gt;
+        &lt;div class="navbar-item navbar-logo"&gt;
+          &lt;img src="../../assets/logo.png" alt="ADG Official" height="38" /&gt;
+        &lt;/div&gt;
+      &lt;/router-link&gt;
+      &lt;a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" @click="this.switchActive"&gt;
+        &lt;span aria-hidden="true"&gt;&lt;/span&gt;
+        &lt;span aria-hidden="true"&gt;&lt;/span&gt;
+        &lt;span aria-hidden="true"&gt;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
     &lt;div :class="this.navBarMenuClass"&gt;
       &lt;div class="navbar-start"&gt;
         &lt;!-- navbar items --&gt;
@@ -205,26 +228,21 @@
 &lt;/template&gt;
 &nbsp;
 &lt;script lang="ts"&gt;
-import { Component, Prop, Vue } from "vue-property-decorator";
-import { IRoute, routes } from "../../router";
-import NavigationBrand from "./NavigationBrand.vue";
+<span class="cstat-no" title="statement not covered" >import { Component, Prop, Vue } from "vue-property-decorator";</span>
+<span class="cstat-no" title="statement not covered" >import { IRoute, routes } from "../../router";</span>
 &nbsp;
-@Component({
-  components: {
-    NavigationBrand
+<span class="fstat-no" title="function not covered" >@Component</span>
+<span class="cstat-no" title="statement not covered" >export default class NavBar extends Vue {</span>
+<span class="cstat-no" title="statement not covered" >  routes: IRoute[] = routes;</span>
+<span class="cstat-no" title="statement not covered" >  isActive: string = '';</span>
+&nbsp;
+<span class="fstat-no" title="function not covered" >  get navBarMenuClass() : string {</span>
+<span class="cstat-no" title="statement not covered" >    return `navbar-menu ${this.isActive}`</span>
   }
-})
-export default class NavBar extends Vue {
-  routes: IRoute[] = routes;
-  isActive: string = "";
-&nbsp;
-  get navBarMenuClass(): string {
-    return `navbar-menu ${this.isActive}`;
+<span class="fstat-no" title="function not covered" >  switchActive(): void {</span>
+<span class="cstat-no" title="statement not covered" >    this.isActive = this.isActive === 'is-active' ? '' : 'is-active';</span>
   }
   
-<span class="fstat-no" title="function not covered" >  switchActive(): void {</span>
-<span class="cstat-no" title="statement not covered" >    this.isActive = this.isActive === "is-active" ? "" : "is-active";</span>
-  }
 }
 &lt;/script&gt;
 &nbsp;
@@ -262,10 +280,10 @@ export default class NavBar extends Vue {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Jul 07 2019 12:22:24 GMT+0200 (Central European Summer Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Jul 07 2019 11:17:08 GMT+0200 (Central European Summer Time)
 </div>
 </div>
-<script src="../../prettify.js"></script>
+<script src="../../../prettify.js"></script>
 <script>
 window.onload = function () {
         if (typeof prettyPrint === 'function') {
@@ -273,6 +291,6 @@ window.onload = function () {
         }
 };
 </script>
-<script src="../../sorter.js"></script>
+<script src="../../../sorter.js"></script>
 </body>
 </html>

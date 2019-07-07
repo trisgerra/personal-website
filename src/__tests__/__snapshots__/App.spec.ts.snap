@@ -16,12 +16,15 @@ exports[`App should render as expected 1`] = `
         class="menu-item router-link-exact-active router-link-active"
         href="#/"
       >
-        <img
-          alt="ADG Official"
-          class="logo"
-          height="38"
-          src="../../assets/logo.png"
-        />
+        <div
+          class="navbar-item navbar-logo"
+        >
+          <img
+            alt="ADG Official"
+            height="38"
+            src="../../assets/logo.png"
+          />
+        </div>
       </a>
        
       <a
@@ -45,27 +48,50 @@ exports[`App should render as expected 1`] = `
     </div>
      
     <div
-      class="navbar-menu"
+      class="navbar-menu "
     >
       <div
         class="navbar-start"
       >
         <a
-          class="navbar-item"
+          class="menu-item router-link-exact-active router-link-active"
+          href="#/"
         >
-          Blog
+          <a
+            class="navbar-item navbar-router"
+          >
+            Home
+          </a>
         </a>
-         
         <a
-          class="navbar-item"
+          class="menu-item"
+          href="#/blog"
         >
-          Design
+          <a
+            class="navbar-item navbar-router"
+          >
+            Blog
+          </a>
         </a>
-         
         <a
-          class="navbar-item"
+          class="menu-item"
+          href="#/design"
         >
-          Projects
+          <a
+            class="navbar-item navbar-router"
+          >
+            Design
+          </a>
+        </a>
+        <a
+          class="menu-item"
+          href="#/projects"
+        >
+          <a
+            class="navbar-item navbar-router"
+          >
+            Projects
+          </a>
         </a>
       </div>
     </div>
@@ -73,6 +99,10 @@ exports[`App should render as expected 1`] = `
    
   <div
     class="home"
-  />
+  >
+    
+  Home
+
+  </div>
 </div>
 `;

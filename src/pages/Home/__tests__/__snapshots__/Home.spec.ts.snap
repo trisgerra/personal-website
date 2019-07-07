@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should render as expected 1`] = `
+<div
+  class="home"
+>
+  
+  Home
+
+</div>
+`;

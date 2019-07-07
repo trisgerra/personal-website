@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationBrand should render as expected 1`] = `
+<div
+  class="navbar-brand"
+>
+  <a
+    class="menu-item router-link-exact-active router-link-active"
+    href="#/"
+  >
+    <div
+      class="navbar-item navbar-logo"
+    >
+      <img
+        alt="ADG Official"
+        height="38"
+        src="../../assets/logo.png"
+      />
+    </div>
+  </a>
+   
+  <a
+    aria-expanded="false"
+    aria-label="menu"
+    class="navbar-burger"
+    role="button"
+  >
+    <span
+      aria-hidden="true"
+    />
+     
+    <span
+      aria-hidden="true"
+    />
+     
+    <span
+      aria-hidden="true"
+    />
+  </a>
+</div>
+`;
