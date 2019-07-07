@@ -1,6 +1,7 @@
 import { Wrapper } from '@vue/test-utils';
 import NavBar from '../NavBar.vue';
 import NavigationBrand from '../NavigationBrand.vue';
+import NavigationMenu from '../NavigationMenu.vue';
 
 import createWrapper from '@/utils/CreateWrapper';
 
@@ -21,10 +22,9 @@ describe('NavBar', () => {
     expect(wrapper.findAll(NavigationBrand).length).toBe(1);
   });
 
-  it('contains the menu items', () => {
+  it('contains a navigation menu', () => {
     const wrapper: Wrapper<NavBar> = createWrapper(NavBar);
-    expect(wrapper.findAll('.navbar-menu').length).toBe(1);
-    expect(wrapper.findAll('.navbar-start').length).toBe(1);
+    expect(wrapper.findAll(NavigationMenu).length).toBe(1);
   });
 
   describe('function switchActive', () => {

@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/components/NavBar/NavBar.vue</title>
+    <title>Code coverage report for NavigationMenu.vue</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../../prettify.css" />
-    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../../sort-arrow-sprite.png);
+            background-image: url(sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -16,18 +16,18 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../../index.html">All files</a> / <a href="index.html">src/components/NavBar</a> NavBar.vue
+      <a href="index.html">All files</a> NavigationMenu.vue
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>7/7</span>
+        <span class='fraction'>6/6</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>2/2</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -75,7 +75,29 @@
 30
 31
 32
-33</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -85,19 +107,25 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -108,35 +136,49 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
-  &lt;nav class="navbar" role="navigation" aria-label="main navigation"&gt;
-    &lt;navigation-brand :switch-active="this.switchActive"&gt;&lt;/navigation-brand&gt;
-    &lt;navigation-menu :is-active="this.isActive"&gt;&lt;/navigation-menu&gt;
-  &lt;/nav&gt;
+     &lt;div :class="this.navBarMenuClass"&gt;
+      &lt;div class="navbar-start"&gt;
+        &lt;!-- navbar items --&gt;
+        &lt;router-link
+          v-for="route in routes"
+          v-bind:key="route.name"
+          class="menu-item"
+          :to="route.path"&gt;
+          &lt;a class="navbar-item navbar-router"&gt;{{route.name}}&lt;/a&gt;
+        &lt;/router-link&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/template&gt;
 &nbsp;
 &lt;script lang="ts"&gt;
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import NavigationBrand from './NavigationBrand.vue';
-import NavigationMenu from './NavigationMenu.vue';
+import { IRoute, routes } from '../../router';
 &nbsp;
-@Component({
-  components: {
-    NavigationBrand,
-    NavigationMenu
-  },
-})
-export default class NavBar extends Vue {
-  isActive: boolean = false;
+@Component
+export default class NavigationMenu extends Vue {
+  @Prop() isActive!: Function;
 &nbsp;
-  switchActive(): void {
-    this.isActive = !this.isActive;
+  routes: IRoute[] = routes;
+&nbsp;
+  get navBarMenuClass(): string {
+    return this.isActive ? 'navbar-menu is-active' : 'navbar-menu';
   }
 }
+&nbsp;
 &lt;/script&gt;
 &nbsp;
 &lt;style scoped lang="scss"&gt;
-.navbar {
-  border-bottom: 1px solid #151616;
+.navbar-router {
+  background-color: white;
+  font-weight: 500;
+  border-bottom: 3px solid white;
+  height: 100%;
+  color: #151616;
+  &amp;:hover {
+    color: #151616;
+    font-weight: 600;
+    border-bottom: 3px solid #151616;
+  }
 }
 &lt;/style&gt;
 &nbsp;</pre></td></tr>
@@ -145,10 +187,10 @@ export default class NavBar extends Vue {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Jul 07 2019 17:54:24 GMT+0200 (Central European Summer Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Jul 07 2019 17:52:34 GMT+0200 (Central European Summer Time)
 </div>
 </div>
-<script src="../../../prettify.js"></script>
+<script src="prettify.js"></script>
 <script>
 window.onload = function () {
         if (typeof prettyPrint === 'function') {
@@ -156,6 +198,6 @@ window.onload = function () {
         }
 };
 </script>
-<script src="../../../sorter.js"></script>
+<script src="sorter.js"></script>
 </body>
 </html>
