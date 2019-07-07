@@ -33,9 +33,7 @@ exports[`Home should render as expected 1`] = `
       <p
         class="description"
       >
-        I'm a enthusiast Software developer but first of all I consider myself as ethernal curious,
-        <br />
-         that loves to learn, new things everyday.
+        I'm a enthusiast Software developer but first of all I consider myself as ethernal curious,&lt;/br&gt; that loves to learn, new things everyday.
       </p>
     </div>
   </div>
