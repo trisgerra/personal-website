@@ -33,7 +33,7 @@ export default class NavBar extends Vue {
   isActive: boolean = false;
 
   get navBarMenuClass(): string {
-    return this.isActive ? 'navbar-menu is-active' : 'navbar-menu' ;
+    return this.isActive ? 'navbar-menu is-active' : 'navbar-menu';
   }
 
   switchActive(): void {

@@ -33,17 +33,17 @@ describe('NavBar', () => {
       ${true}         | ${false}        
       ${false}        | ${true}         
       `('returns $expectedUpdate when switch from $actualState', ({ isActive, expectedUpdate }) => {
-      const wrapper: Wrapper<NavBar> = createWrapper(NavBar);
-      wrapper.setData({
-        isActive
-      });
-      wrapper.vm.switchActive();
-      expect(wrapper.vm.isActive).toBe(expectedUpdate);
-      if(expectedUpdate){
-        expect(wrapper.findAll('.is-active').length).toBe(1);
-      }else{
-        expect(wrapper.findAll('.is-active').length).toBe(0);
-      }
-    });
+  const wrapper: Wrapper<NavBar> = createWrapper(NavBar);
+  wrapper.setData({
+    isActive,
+  });
+  wrapper.vm.switchActive();
+  expect(wrapper.vm.isActive).toBe(expectedUpdate);
+  if (expectedUpdate) {
+    expect(wrapper.findAll('.is-active').length).toBe(1);
+  } else {
+    expect(wrapper.findAll('.is-active').length).toBe(0);
+  }
+});
   });
 });
