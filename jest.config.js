@@ -32,6 +32,9 @@ module.exports = {
   globals: {
     'ts-jest': {
       babelConfig: true,
+      diagnostics: {
+        ignoreCodes: [2339],
+      },
     },
   },
   collectCoverage: true,

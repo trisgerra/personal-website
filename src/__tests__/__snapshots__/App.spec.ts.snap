@@ -48,7 +48,7 @@ exports[`App should render as expected 1`] = `
     </div>
      
     <div
-      class="navbar-menu "
+      class="navbar-menu"
     >
       <div
         class="navbar-start"

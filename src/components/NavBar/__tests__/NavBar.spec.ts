@@ -29,18 +29,21 @@ describe('NavBar', () => {
 
   describe('function switchActive', () => {
     test.each`
-      actualState     | expectedUpdate  
-      ${'is-active'}  | ${''} 
-      ${''}           | ${'is-active'} 
-      ${'test'}       | ${'is-active'} 
-      `('returns $expectedUpdate when switch from $actualState', ({ actualState, expectedUpdate }) => {
-  const wrapper: Wrapper<NavBar> = createWrapper(NavBar, {
-    propsData: {
-      isActive: actualState,
-    },
-  });
-  wrapper.vm.switchActive();
-  expect(wrapper.vm.isActive).toBe(expectedUpdate);
-});
+      isActive        | expectedUpdate
+      ${true}         | ${false}        
+      ${false}        | ${true}         
+      `('returns $expectedUpdate when switch from $actualState', ({ isActive, expectedUpdate }) => {
+      const wrapper: Wrapper<NavBar> = createWrapper(NavBar);
+      wrapper.setData({
+        isActive
+      });
+      wrapper.vm.switchActive();
+      expect(wrapper.vm.isActive).toBe(expectedUpdate);
+      if(expectedUpdate){
+        expect(wrapper.findAll('.is-active').length).toBe(1);
+      }else{
+        expect(wrapper.findAll('.is-active').length).toBe(0);
+      }
+    });
   });
 });

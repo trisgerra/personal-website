@@ -30,14 +30,14 @@ import NavigationBrand from './NavigationBrand.vue';
 export default class NavBar extends Vue {
   routes: IRoute[] = routes;
 
-  isActive: string = '';
+  isActive: boolean = false;
 
   get navBarMenuClass(): string {
-    return `navbar-menu ${this.isActive}`;
+    return this.isActive ? 'navbar-menu is-active' : 'navbar-menu' ;
   }
 
   switchActive(): void {
-    this.isActive = this.isActive === 'is-active' ? '' : 'is-active';
+    this.isActive = !this.isActive;
   }
 }
 </script>
