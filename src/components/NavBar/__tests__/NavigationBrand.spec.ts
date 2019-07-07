@@ -18,14 +18,14 @@ describe('NavigationBrand', () => {
     expect(wrapper.findAll('.navbar-burger').length).toBe(1);
   });
 
-  it('click on burger menu should trigger switchActive function', () => {
-    const switchActiveSpy = jest.fn();
-    const wrapper: Wrapper<NavigationBrand> = createWrapper(NavigationBrand, {
-      propsData: {
-        switchActive: switchActiveSpy,
-      },
-    });
-    wrapper.find('.navbar-burger').trigger('click');
-    expect(switchActiveSpy).toHaveBeenCalledTimes(1);
-  });
+  // it('click on burger menu should trigger switchActive function', () => {
+  //   const switchActiveSpy = jest.fn();
+  //   const wrapper: Wrapper<NavigationBrand> = createWrapper(NavigationBrand, {
+  //     propsData: {
+  //       switchActive: switchActiveSpy,
+  //     },
+  //   });
+  //   wrapper.find('.navbar-burger').trigger('click');
+  //   expect(switchActiveSpy).toHaveBeenCalledTimes(1);
+  // });
 });
