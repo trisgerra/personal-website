@@ -27,6 +27,6 @@ export default class NavBar extends Vue {
 
 <style scoped lang="scss">
 .navbar {
-  border-bottom: 1px solid #151616;
+  border-bottom: 1px solid #DFDFDF;
 }
 </style>

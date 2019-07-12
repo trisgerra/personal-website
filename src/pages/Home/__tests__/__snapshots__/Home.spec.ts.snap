@@ -4,8 +4,70 @@ exports[`Home should render as expected 1`] = `
 <div
   class="home"
 >
-  
-  Home
-
+  <div
+    class="container"
+  >
+    <div
+      class="absolute columns"
+    >
+      <div>
+        <img
+          alt="profile image"
+          class="profile"
+          src="../../../assets/profile.jpg"
+        />
+      </div>
+       
+      <div
+        class="column text-container"
+      >
+        <h2
+          class="title"
+        >
+          Welcome to my &lt;space/&gt;
+        </h2>
+         
+        <h3
+          class="subtitle"
+        >
+          WHO AM I?
+        </h3>
+         
+        <p
+          class="description"
+        >
+          I'm a enthusiast Software developer but first of all I consider myself as ethernal curious,&lt;/br&gt; that loves to learn, new things everyday.
+        </p>
+      </div>
+    </div>
+     
+    <nav
+      class="columns"
+    >
+      <div
+        class="column first"
+      />
+       
+      <div
+        class="column"
+      />
+       
+      <div
+        class="column"
+      />
+       
+      <div
+        class="column"
+      />
+       
+      <div
+        class="column"
+      />
+       
+      <div
+        class="column"
+      />
+    </nav>
+  </div>
 </div>
 `;
