@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeCard should render as expected 1`] = `
+<div
+  class="card column dark"
+>
+  <div
+    class="card-content"
+  >
+    <h3
+      class="card-title"
+    >
+      WORK EXPERIENCE
+    </h3>
+     
+    <p
+      class="item"
+      style="border-left: 3px solid #FF0000;"
+    >
+      2012 - iOS Internship
+    </p>
+    <p
+      class="item"
+      style="border-left: 3px solid #FF0000;"
+    >
+      2013 - iOS Developer
+    </p>
+    <p
+      class="item"
+      style="border-left: 3px solid #FF0000;"
+    >
+      2014 - Mobile Developer
+    </p>
+    <p
+      class="item"
+      style="border-left: 3px solid #FF0000;"
+    >
+      2015 - Mobile Developer & Analyst
+    </p>
+    <p
+      class="item"
+      style="border-left: 3px solid #FF0000;"
+    >
+      2016 - Mobile Developer, Analyst Designer
+    </p>
+    <p
+      class="item"
+      style="border-left: 3px solid #FF0000;"
+    >
+      2017 - Mobile Lead
+    </p>
+    <p
+      class="item"
+      style="border-left: 3px solid #00D1FF;"
+    >
+      2018 - Frontend Developer
+    </p>
+    <p
+      class="item"
+      style="border-left: 3px solid #00D1FF;"
+    >
+      Now - Senior Frontend Developer
+    </p>
+  </div>
+</div>
+`;
