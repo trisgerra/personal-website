@@ -5,7 +5,8 @@
       <p v-for="item in card.items"
       v-bind:key="item.text"
       class="item"
-      v-bind:style="{'border-left': '3px solid ' + item.color}">{{item.text}}</p>
+      v-html="item.text"
+      v-bind:style="{'border-left': '3px solid ' + item.color}"></p>
     </div>
   </div>
 </template>

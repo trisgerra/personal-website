@@ -191,49 +191,73 @@ exports[`App should render as expected 1`] = `
                 class="item"
                 style="border-left: 3px solid #FF0000;"
               >
-                2012 - iOS Internship
+                <b>
+                  2012
+                </b>
+                 - iOS Internship
               </p>
               <p
                 class="item"
                 style="border-left: 3px solid #FF0000;"
               >
-                2013 - iOS Developer
+                <b>
+                  2013
+                </b>
+                 - iOS Developer
               </p>
               <p
                 class="item"
                 style="border-left: 3px solid #FF0000;"
               >
-                2014 - Mobile Developer
+                <b>
+                  2014
+                </b>
+                 - Mobile Developer
               </p>
               <p
                 class="item"
                 style="border-left: 3px solid #FF0000;"
               >
-                2015 - Mobile Developer & Analyst
+                <b>
+                  2015
+                </b>
+                 - Mobile Developer & Analyst
               </p>
               <p
                 class="item"
                 style="border-left: 3px solid #FF0000;"
               >
-                2016 - Mobile Developer, Analyst Designer
+                <b>
+                  2016
+                </b>
+                 - Mobile Developer, Analyst Designer
               </p>
               <p
                 class="item"
                 style="border-left: 3px solid #FF0000;"
               >
-                2017 - Mobile Lead
+                <b>
+                  2017
+                </b>
+                 - Mobile Lead
               </p>
               <p
                 class="item"
                 style="border-left: 3px solid #00D1FF;"
               >
-                2018 - Frontend Developer
+                <b>
+                  2018
+                </b>
+                 - Frontend Developer
               </p>
               <p
                 class="item"
                 style="border-left: 3px solid #00D1FF;"
               >
-                Now - Senior Frontend Developer
+                <b>
+                  Now
+                </b>
+                 - Senior Frontend Developer
               </p>
             </div>
           </div>
@@ -257,50 +281,216 @@ exports[`App should render as expected 1`] = `
                 class="item"
                 style="border-left: 3px solid #FF0000;"
               >
-                iOS - [Obj-C, Swift, React Native]
+                <b>
+                  iOS
+                </b>
+                 - [Obj-C, Swift, React Native]
               </p>
               <p
                 class="item"
                 style="border-left: 3px solid #FF0000;"
               >
-                Android - [Java, Swift, React Native]
+                <b>
+                  Android
+                </b>
+                 - [Java, Swift, React Native]
               </p>
               <p
                 class="item"
                 style="border-left: 3px solid #00D1FF;"
               >
-                Web - [Vue, React]
+                <b>
+                  Web
+                </b>
+                 - [Vue, React]
               </p>
               <p
                 class="item"
                 style="border-left: 3px solid #00D1FF;"
               >
-                Unit Testing - [Jest]
+                <b>
+                  Unit Testing
+                </b>
+                 - [Jest]
               </p>
               <p
                 class="item"
                 style="border-left: 3px solid #00D1FF;"
               >
-                E2E Testing - [Cypress]
+                <b>
+                  E2E Testing
+                </b>
+                 - [Cypress]
               </p>
               <p
                 class="item"
                 style="border-left: 3px solid #151616;"
               >
-                Design - [Invision Studio, Sketch, Photoshop]
+                <b>
+                  Design
+                </b>
+                 - [Invision Studio, Sketch, Photoshop]
               </p>
               <p
                 class="item"
                 style="border-left: 3px solid #151616;"
               >
-                CI/CD - [Travis CI, Circle CI, CodeClimate, Jenkins, Heroku]
+                <b>
+                  CI/CD
+                </b>
+                 - [Travis CI, Circle CI, CodeClimate, Jenkins, Heroku]
               </p>
               <p
                 class="item"
                 style="border-left: 3px solid #151616;"
               >
-                Devops - [Docker, Kubernetes]
+                <b>
+                  Devops
+                </b>
+                 - [Docker, Kubernetes]
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <div
+      class="square-container"
+    >
+      <div
+        class="square-row"
+      >
+        <div
+          class="columns"
+        >
+          <div
+            class="column square-card"
+          >
+            <div
+              class="square-card"
+              style="background-color: rgb(21, 22, 22);"
+            >
+              <a
+                href="https://github.com/trisgerra"
+                target="_blank"
+              >
+                <h3>
+                  GIT
+                </h3>
+              </a>
+            </div>
+          </div>
+          <div
+            class="column square-card"
+          >
+            <div
+              class="square-card"
+              style="background-color: rgb(45, 47, 47);"
+            >
+              <a
+                href="https://www.linkedin.com/in/a-digiacomo/"
+                target="_blank"
+              >
+                <h3>
+                  LINKEDIN
+                </h3>
+              </a>
+            </div>
+          </div>
+          <div
+            class="column square-card"
+          >
+            <div
+              class="square-card"
+              style="background-color: rgb(73, 74, 74);"
+            >
+              <a
+                href="https://apps.apple.com/it/app/proteit/id1149272279?l=en"
+                target="_blank"
+              >
+                <h3>
+                  PROTEIT
+                </h3>
+              </a>
+            </div>
+          </div>
+          <div
+            class="column square-card"
+          >
+            <div
+              class="square-card"
+              style="background-color: rgb(108, 108, 108);"
+            >
+              <a
+                href="https://play.google.com/store/apps/details?id=it.asfitness.android.app.vapor.vapor&hl=it"
+                target="_blank"
+              >
+                <h3>
+                  VAPOR
+                </h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="square-row"
+      >
+        <div
+          class="columns"
+        >
+          <div
+            class="column square-card"
+          >
+            <div
+              class="square-card"
+              style="background-color: rgb(108, 108, 108);"
+            >
+              <h3>
+                BLOG
+              </h3>
+            </div>
+          </div>
+          <div
+            class="column square-card"
+          >
+            <div
+              class="square-card"
+              style="background-color: rgb(73, 74, 74);"
+            >
+              <h3>
+                FITNESS
+              </h3>
+            </div>
+          </div>
+          <div
+            class="column square-card"
+          >
+            <div
+              class="square-card"
+              style="background-color: rgb(45, 47, 47);"
+            >
+              <a
+                href="mailto:andrea.digiacomo@live.it"
+                target="_blank"
+              >
+                <h3>
+                  CONTACT
+                </h3>
+              </a>
+            </div>
+          </div>
+          <div
+            class="column square-card"
+          >
+            <div
+              class="square-card"
+              style="background-color: rgb(21, 22, 22);"
+            >
+              <h3>
+                :)
+              </h3>
             </div>
           </div>
         </div>

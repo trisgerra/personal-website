@@ -9,72 +9,78 @@ export interface ICard {
     isDark: boolean
 }
 
+export interface ISquareItem {
+  title: string;
+  color: string;
+  url: string;
+}
+
 const experienceList : IItem[] = [
   {
-    text: '2012 - iOS Internship',
+    text: '<b>2012</b> - iOS Internship',
     color: '#FF0000',
   },
   {
-    text: '2013 - iOS Developer',
+    text: '<b>2013</b> - iOS Developer',
     color: '#FF0000',
   },
   {
-    text: '2014 - Mobile Developer',
+    text: '<b>2014</b> - Mobile Developer',
     color: '#FF0000',
   },
   {
-    text: '2015 - Mobile Developer & Analyst',
+    text: '<b>2015</b> - Mobile Developer & Analyst',
     color: '#FF0000',
   },
   {
-    text: '2016 - Mobile Developer, Analyst Designer',
+    text: '<b>2016</b> - Mobile Developer, Analyst Designer',
     color: '#FF0000',
   },
   {
-    text: '2017 - Mobile Lead',
+    text: '<b>2017</b> - Mobile Lead',
     color: '#FF0000',
   },
   {
-    text: '2018 - Frontend Developer',
+    text: '<b>2018</b> - Frontend Developer',
     color: '#00D1FF',
   },
   {
-    text: 'Now - Senior Frontend Developer',
+    text: '<b>Now</b> - Senior Frontend Developer',
     color: '#00D1FF',
   },
 ];
 
 const skillsList : IItem[] = [
   {
-    text: 'iOS - [Obj-C, Swift, React Native]',
+    text: '<b>iOS</b> - [Obj-C, Swift, React Native]',
     color: '#FF0000',
   },
   {
-    text: 'Android - [Java, Swift, React Native]',
+    text: '<b>Android</b> - [Java, Swift, React Native]',
     color: '#FF0000',
   },
   {
-    text: 'Web - [Vue, React]',
+    text: '<b>Web</b> - [Vue, React]',
     color: '#00D1FF',
   },
   {
-    text: 'Unit Testing - [Jest]',
+    text: '<b>Unit Testing</b> - [Jest]',
     color: '#00D1FF',
   },
   {
-    text: 'E2E Testing - [Cypress]',
+    text: '<b>E2E Testing</b> - [Cypress]',
     color: '#00D1FF',
   },
   {
-    text: 'Design - [Invision Studio, Sketch, Photoshop]',
+    text: '<b>Design</b> - [Invision Studio, Sketch, Photoshop]',
     color: '#151616',
   },
   {
-    text: 'CI/CD - [Travis CI, Circle CI, CodeClimate, Jenkins, Heroku]',
+    text: '<b>CI/CD</b> - [Travis CI, Circle CI, CodeClimate, Jenkins, Heroku]',
     color: '#151616',
   },
   {
-    text: 'Devops - [Docker, Kubernetes]',
+    text: '<b>Devops</b> - [Docker, Kubernetes]',
     color: '#151616',
   },
 ];
@@ -90,4 +96,47 @@ export const homeCards : ICard[] = [
     items: skillsList,
     isDark: false,
   },
+];
+
+export const squareCards : ISquareItem[][] = [
+  [{
+    title: 'GIT',
+    color: '#151616',
+    url: 'https://github.com/trisgerra',
+  },
+  {
+    title: 'LINKEDIN',
+    color: '#2D2F2F',
+    url: 'https://www.linkedin.com/in/a-digiacomo/',
+  },
+  {
+    title: 'PROTEIT',
+    color: '#494A4A',
+    url: 'https://apps.apple.com/it/app/proteit/id1149272279?l=en',
+  },
+  {
+    title: 'VAPOR',
+    color: '#6C6C6C',
+    url: 'https://play.google.com/store/apps/details?id=it.asfitness.android.app.vapor.vapor&hl=it',
+  }],
+  [{
+    title: 'BLOG',
+    color: '#6C6C6C',
+    url: '',
+  },
+  {
+    title: 'FITNESS',
+    color: '#494A4A',
+    url: '',
+  },
+  {
+    title: 'CONTACT',
+    color: '#2D2F2F',
+    url: 'mailto:andrea.digiacomo@live.it',
+  },
+  {
+    title: ':)',
+    color: '#151616',
+    url: '',
+  }],
 ];
