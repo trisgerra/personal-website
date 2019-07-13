@@ -8,6 +8,15 @@
         </div>
       </div>
     </div>
+    <div class="square-container">
+      <div v-bind:key="index" v-for="(row, index) in squares" class="square-row">
+        <div class="columns">
+          <div v-for="item in row" v-bind:key="item.title" class="column square-card">
+            <square-card :item="item"></square-card>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -15,29 +24,38 @@
 import { Component, Vue } from 'vue-property-decorator';
 import HeadHero from './HeadHero/HeadHero.vue';
 import HomeCard from './HomeCard/HomeCard.vue';
-import { homeCards, ICard } from './homeCardItems';
+import SquareCard from './SquareCard/SquareCard.vue';
+import {
+  homeCards, squareCards, ICard, ISquareItem,
+} from './homeCardItems';
 
 @Component({
   components: {
     HeadHero,
     HomeCard,
+    SquareCard,
   },
 })
 export default class Home extends Vue {
   cards: ICard[] = homeCards;
+
+  squares: ISquareItem[][] = squareCards;
 }
 </script>
 
 <style lang="scss" scoped>
 .columns {
-    margin: 0px;
-    width: 100%;
+  margin: 0px;
+  width: 100%;
 }
 .column {
-    padding:0px;
+  padding: 0px;
 }
 .card-container {
-  border-top: 3px solid #FF0000;
-  border-right: 3px solid #FF0000;
+  border-top: 3px solid #ff0000;
+  border-right: 3px solid #ff0000;
+}
+.square-container {
+    border-right: 3px solid #ff0000;
 }
 </style>

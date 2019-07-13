@@ -10,7 +10,7 @@
       class="navbar-burger"
       aria-label="menu"
       aria-expanded="false"
-      @click="this.switchActive">
+      @click="switchActive">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>

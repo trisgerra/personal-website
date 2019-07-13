@@ -17,49 +17,73 @@ exports[`HomeCard should render as expected 1`] = `
       class="item"
       style="border-left: 3px solid #FF0000;"
     >
-      2012 - iOS Internship
+      <b>
+        2012
+      </b>
+       - iOS Internship
     </p>
     <p
       class="item"
       style="border-left: 3px solid #FF0000;"
     >
-      2013 - iOS Developer
+      <b>
+        2013
+      </b>
+       - iOS Developer
     </p>
     <p
       class="item"
       style="border-left: 3px solid #FF0000;"
     >
-      2014 - Mobile Developer
+      <b>
+        2014
+      </b>
+       - Mobile Developer
     </p>
     <p
       class="item"
       style="border-left: 3px solid #FF0000;"
     >
-      2015 - Mobile Developer & Analyst
+      <b>
+        2015
+      </b>
+       - Mobile Developer & Analyst
     </p>
     <p
       class="item"
       style="border-left: 3px solid #FF0000;"
     >
-      2016 - Mobile Developer, Analyst Designer
+      <b>
+        2016
+      </b>
+       - Mobile Developer, Analyst Designer
     </p>
     <p
       class="item"
       style="border-left: 3px solid #FF0000;"
     >
-      2017 - Mobile Lead
+      <b>
+        2017
+      </b>
+       - Mobile Lead
     </p>
     <p
       class="item"
       style="border-left: 3px solid #00D1FF;"
     >
-      2018 - Frontend Developer
+      <b>
+        2018
+      </b>
+       - Frontend Developer
     </p>
     <p
       class="item"
       style="border-left: 3px solid #00D1FF;"
     >
-      Now - Senior Frontend Developer
+      <b>
+        Now
+      </b>
+       - Senior Frontend Developer
     </p>
   </div>
 </div>
