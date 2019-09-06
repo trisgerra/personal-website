@@ -101,7 +101,7 @@ exports[`App should render as expected 1`] = `
     class="home"
   >
     <div
-      class="container"
+      class="container is-hidden-touch"
     >
       <div
         class="absolute columns"
@@ -132,7 +132,17 @@ exports[`App should render as expected 1`] = `
           <p
             class="description"
           >
-            I'm a enthusiast Software developer but first of all I consider myself as ethernal curious,&lt;/br&gt; that loves to learn, new things everyday.
+            I'm a 
+            <b>
+              enthusiast
+            </b>
+             Software developer but first of all I consider myself as ethernal curious,
+            <br />
+             that loves to 
+            <b>
+              learn
+            </b>
+            , new things everyday.
           </p>
         </div>
       </div>

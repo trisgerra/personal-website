@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container is-hidden-touch">
     <div class="absolute columns">
       <div>
         <img class="profile" src="../../../assets/profile.jpg" alt="profile image" />
@@ -7,7 +7,7 @@
       <div class="column text-container">
         <h2 class="title">{{title}}</h2>
         <h3 class="subtitle">{{subtitle}}</h3>
-        <p class="description">{{description}}</p>
+        <p class="description" v-html="description"></p>
       </div>
     </div>
     <nav class="columns">
@@ -32,7 +32,7 @@ export default class HeadHero extends Vue {
 
   subtitle: string = 'WHO AM I?';
 
-  description: string = "I'm a enthusiast Software developer but first of all I consider myself as ethernal curious,</br> that loves to learn, new things everyday."
+  description: string = "I'm a <b>enthusiast</b> Software developer but first of all I consider myself as ethernal curious,</br> that loves to <b>learn</b>, new things everyday."
 }
 </script>
 
@@ -47,8 +47,16 @@ export default class HeadHero extends Vue {
   border-bottom: 1px solid #dfdfdf;
 }
 .column {
-  height: 600px;
+  height: 40vw;
   border-right: 1px solid #dfdfdf;
+}
+
+.description {
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #3f3c3c;
+    margin-left: 20px;
+    margin-bottom: 0px;
 }
 
 .first{
@@ -67,19 +75,19 @@ export default class HeadHero extends Vue {
 .profile {
   border: 5px solid #151616;
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 20vw;
+  height: 20vw;
 }
 
 .title {
   color: #3f3c3c;
-  font-size: 70px;
+  font-size: 4vw;
   font-weight: bold;
   margin-bottom: 40px;
 }
 
 .subtitle {
-    font-size: 22px;
+    font-size: 2vw;
     font-weight: 500;
     color: #3f3c3c;
     margin-left: 20px;
