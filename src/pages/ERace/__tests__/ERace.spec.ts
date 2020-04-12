@@ -1,6 +1,6 @@
 import { Wrapper } from '@vue/test-utils';
 import createWrapper from '@/utils/CreateWrapper';
-import ERace from '../Erace.vue';
+import ERace from '../ERace.vue';
 
 describe('ERace', () => {
   it('should render as expected', () => {
