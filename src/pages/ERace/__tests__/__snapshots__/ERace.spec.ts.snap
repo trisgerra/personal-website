@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ERace should render as expected 1`] = `
+<div
+  class="erace"
+>
+  <iframe
+    allowfullscreen="allowfullscreen"
+    class="frame-stream"
+    frameborder="0"
+    height="768"
+    scrolling="no"
+    src="https://player.twitch.tv/?channel=asraces"
+    width="674"
+  />
+   
+  <iframe
+    cleass="frame-chat"
+    frameborder="0"
+    height="500"
+    scrolling="no"
+    src="https://www.twitch.tv/embed/asraces/chat"
+    width="350"
+  />
+</div>
+`;

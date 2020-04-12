@@ -1,9 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './pages/Home/Home.vue';
-import Blog from './pages/Blog/Blog.vue';
-import Design from './pages/Design/Design.vue';
-import Projects from './pages/Projects/Projects.vue';
+import ERace from './pages/ERace/ERace.vue';
 
 Vue.use(Router);
 
@@ -20,19 +18,9 @@ export const routes: IRoute[] = [
     component: Home,
   },
   {
-    path: '/blog',
-    name: 'Blog',
-    component: Blog,
-  },
-  {
-    path: '/design',
-    name: 'Design',
-    component: Design,
-  },
-  {
-    path: '/projects',
-    name: 'Projects',
-    component: Projects,
+    path: '/erace',
+    name: 'ERace',
+    component: ERace,
   },
 ];
 

@@ -24,7 +24,7 @@ exports[`Home should render as expected 1`] = `
         <h2
           class="title"
         >
-          Welcome to my &lt;space/&gt;
+          Andrea DG &lt;website/&gt;
         </h2>
          
         <h3
@@ -36,17 +36,19 @@ exports[`Home should render as expected 1`] = `
         <p
           class="description"
         >
-          I'm a 
+          I'm 
           <b>
-            enthusiast
+            simply
           </b>
-           Software developer but first of all I consider myself as ethernal curious,
-          <br />
-           that loves to 
+           a Software developer with a passion for 
           <b>
-            learn
+            new technologies
           </b>
-          , new things everyday.
+           and the 
+          <b>
+            design
+          </b>
+           .
         </p>
       </div>
     </div>
@@ -266,6 +268,64 @@ exports[`Home should render as expected 1`] = `
           </div>
         </div>
       </div>
+      <div
+        class="column home-card"
+      >
+        <div
+          class="card column dark"
+        >
+          <div
+            class="card-content"
+          >
+            <h3
+              class="card-title"
+            >
+              HOBBIES
+            </h3>
+             
+            <p
+              class="item"
+              style="border-left: 3px solid #FF0000;"
+            >
+              <b>
+                Vaping
+              </b>
+            </p>
+            <p
+              class="item"
+              style="border-left: 3px solid #FF0000;"
+            >
+              <b>
+                Drive simulator
+              </b>
+            </p>
+            <p
+              class="item"
+              style="border-left: 3px solid #00D1FF;"
+            >
+              <b>
+                Fitness
+              </b>
+            </p>
+            <p
+              class="item"
+              style="border-left: 3px solid #00D1FF;"
+            >
+              <b>
+                Politics
+              </b>
+            </p>
+            <p
+              class="item"
+              style="border-left: 3px solid #00D1FF;"
+            >
+              <b>
+                Cryptocurrencies
+              </b>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
    
@@ -290,7 +350,7 @@ exports[`Home should render as expected 1`] = `
               target="_blank"
             >
               <h3>
-                GIT
+                GITHUB
               </h3>
             </a>
           </div>
@@ -320,62 +380,13 @@ exports[`Home should render as expected 1`] = `
             style="background-color: rgb(73, 74, 74);"
           >
             <a
-              href="https://apps.apple.com/it/app/proteit/id1149272279?l=en"
+              href="https://www.twitch.tv/asraces"
               target="_blank"
             >
               <h3>
-                PROTEIT
+                TWITCH
               </h3>
             </a>
-          </div>
-        </div>
-        <div
-          class="column square-card"
-        >
-          <div
-            class="square-card"
-            style="background-color: rgb(108, 108, 108);"
-          >
-            <a
-              href="https://play.google.com/store/apps/details?id=it.asfitness.android.app.vapor.vapor&hl=it"
-              target="_blank"
-            >
-              <h3>
-                VAPOR
-              </h3>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="square-row"
-    >
-      <div
-        class="columns"
-      >
-        <div
-          class="column square-card"
-        >
-          <div
-            class="square-card"
-            style="background-color: rgb(108, 108, 108);"
-          >
-            <h3>
-              BLOG
-            </h3>
-          </div>
-        </div>
-        <div
-          class="column square-card"
-        >
-          <div
-            class="square-card"
-            style="background-color: rgb(73, 74, 74);"
-          >
-            <h3>
-              FITNESS
-            </h3>
           </div>
         </div>
         <div
@@ -393,18 +404,6 @@ exports[`Home should render as expected 1`] = `
                 CONTACT
               </h3>
             </a>
-          </div>
-        </div>
-        <div
-          class="column square-card"
-        >
-          <div
-            class="square-card"
-            style="background-color: rgb(21, 22, 22);"
-          >
-            <h3>
-              :)
-            </h3>
           </div>
         </div>
       </div>

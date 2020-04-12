@@ -59,7 +59,7 @@ export default class NavigationMenu extends Vue {
         border-bottom: 3px solid #151616;
     }
 }
-  
+
 @include touch {
   .navbar-router {
       border-left: 2px solid white;

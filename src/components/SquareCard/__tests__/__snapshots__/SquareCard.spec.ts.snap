@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeCard should render as expected 1`] = `
+<div
+  class="square-card"
+  style="background-color: rgb(255, 255, 255);"
+>
+  <h3>
+    Test
+  </h3>
+</div>
+`;

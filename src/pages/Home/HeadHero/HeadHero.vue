@@ -28,11 +28,11 @@ import { Component, Vue } from 'vue-property-decorator';
   components: {},
 })
 export default class HeadHero extends Vue {
-  title: string = 'Welcome to my <space/>';
+  title: string = 'Andrea DG <website/>';
 
   subtitle: string = 'WHO AM I?';
 
-  description: string = "I'm a <b>enthusiast</b> Software developer but first of all I consider myself as ethernal curious,</br> that loves to <b>learn</b>, new things everyday."
+  description: string = "I'm <b>simply</b> a Software developer with a passion for <b>new technologies</b> and the <b>design</b> ."
 }
 </script>
 

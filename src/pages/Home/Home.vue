@@ -23,7 +23,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import HeadHero from './HeadHero/HeadHero.vue';
-import HomeCard from './HomeCard/HomeCard.vue';
+import HomeCard from '../../components/HomeCard/HomeCard.vue';
 import SquareCard from './SquareCard/SquareCard.vue';
 import {
   homeCards, squareCards, ICard, ISquareItem,

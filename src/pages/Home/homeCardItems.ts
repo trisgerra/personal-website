@@ -85,6 +85,29 @@ const skillsList : IItem[] = [
   },
 ];
 
+const hobbiesList : IItem[] = [
+  {
+    text: '<b>Vaping</b>',
+    color: '#FF0000',
+  },
+  {
+    text: '<b>Drive simulator</b>',
+    color: '#FF0000',
+  },
+  {
+    text: '<b>Fitness</b>',
+    color: '#00D1FF',
+  },
+  {
+    text: '<b>Politics</b>',
+    color: '#00D1FF',
+  },
+  {
+    text: '<b>Cryptocurrencies</b>',
+    color: '#00D1FF',
+  },
+];
+
 export const homeCards : ICard[] = [
   {
     name: 'WORK EXPERIENCE',
@@ -96,11 +119,16 @@ export const homeCards : ICard[] = [
     items: skillsList,
     isDark: false,
   },
+  {
+    name: 'HOBBIES',
+    items: hobbiesList,
+    isDark: true,
+  },
 ];
 
 export const squareCards : ISquareItem[][] = [
   [{
-    title: 'GIT',
+    title: 'GITHUB',
     color: '#151616',
     url: 'https://github.com/trisgerra',
   },
@@ -110,33 +138,13 @@ export const squareCards : ISquareItem[][] = [
     url: 'https://www.linkedin.com/in/a-digiacomo/',
   },
   {
-    title: 'PROTEIT',
+    title: 'TWITCH',
     color: '#494A4A',
-    url: 'https://apps.apple.com/it/app/proteit/id1149272279?l=en',
-  },
-  {
-    title: 'VAPOR',
-    color: '#6C6C6C',
-    url: 'https://play.google.com/store/apps/details?id=it.asfitness.android.app.vapor.vapor&hl=it',
-  }],
-  [{
-    title: 'BLOG',
-    color: '#6C6C6C',
-    url: '',
-  },
-  {
-    title: 'FITNESS',
-    color: '#494A4A',
-    url: '',
+    url: 'https://www.twitch.tv/asraces',
   },
   {
     title: 'CONTACT',
     color: '#2D2F2F',
     url: 'mailto:andrea.digiacomo@live.it',
-  },
-  {
-    title: ':)',
-    color: '#151616',
-    url: '',
   }],
 ];

@@ -62,32 +62,12 @@ exports[`NavBar should render as expected 1`] = `
       </a>
       <a
         class="menu-item"
-        href="#/blog"
+        href="#/erace"
       >
         <a
           class="navbar-item navbar-router"
         >
-          Blog
-        </a>
-      </a>
-      <a
-        class="menu-item"
-        href="#/design"
-      >
-        <a
-          class="navbar-item navbar-router"
-        >
-          Design
-        </a>
-      </a>
-      <a
-        class="menu-item"
-        href="#/projects"
-      >
-        <a
-          class="navbar-item navbar-router"
-        >
-          Projects
+          ERace
         </a>
       </a>
     </div>

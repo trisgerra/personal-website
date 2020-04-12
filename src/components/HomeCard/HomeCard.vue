@@ -13,7 +13,8 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
-import { ICard } from '../homeCardItems';
+import { ICard } from '../../pages/Home/homeCardItems';
+
 @Component({
   components: {},
 })

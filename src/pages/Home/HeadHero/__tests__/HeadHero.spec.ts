@@ -22,7 +22,7 @@ describe('Home', () => {
   it('contains title', () => {
     const wrapper: Wrapper<HeadHero> = createWrapper(HeadHero);
     expect(wrapper.findAll('.title').length).toBe(1);
-    expect(wrapper.find('.title').text()).toEqual('Welcome to my <space/>');
+    expect(wrapper.find('.title').text()).toEqual('Andrea DG <website/>');
   });
 
   it('contains subtitle', () => {
