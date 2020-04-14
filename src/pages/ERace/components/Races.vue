@@ -13,16 +13,14 @@
         </div>
       </section>
       <div id="race1" class="past-races columns">
-        <a class="column is-6" href="https://www.facebook.com/asraces/videos/703386320433694/">
-          <img src="../../../assets/races/race1.png" alt="Race1"/>
+        <a class="column is-4" target="_blank" href="https://www.facebook.com/asraces/videos/703386320433694/">
+          <img loading="lazy" src="../../../assets/races/race1.png" alt="Race1"/>
         </a>
-        <a id="race2" class="column is-6" href="https://www.facebook.com/asraces/videos/586857158578592/">
-          <img src="../../../assets/races/race2.png" alt="Race2"/>
+        <a id="race2" target="_blank" class="column is-4" href="https://www.facebook.com/asraces/videos/586857158578592/">
+          <img loading="lazy" src="../../../assets/races/race2.png" alt="Race2"/>
         </a>
-      </div>
-      <div id="race3" class="past-races columns">
-        <a class="column is-offset-3 is-6" href="https://www.facebook.com/asraces/videos/227828291771112/">
-          <img src="../../../assets/races/race3.png" alt="Race3"/>
+        <a class="column is-4" href="https://www.facebook.com/asraces/videos/227828291771112/">
+          <img loading="lazy" src="../../../assets/races/race3.png" alt="Race3"/>
         </a>
       </div>
   </div>
