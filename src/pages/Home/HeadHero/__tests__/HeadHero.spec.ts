@@ -21,18 +21,18 @@ describe('Home', () => {
 
   it('contains title', () => {
     const wrapper: Wrapper<HeadHero> = createWrapper(HeadHero);
-    expect(wrapper.findAll('.title').length).toBe(1);
+    expect(wrapper.findAll('.title').length).toBe(2);
     expect(wrapper.find('.title').text()).toEqual('Andrea DG <website/>');
   });
 
   it('contains subtitle', () => {
     const wrapper: Wrapper<HeadHero> = createWrapper(HeadHero);
-    expect(wrapper.findAll('.subtitle').length).toBe(1);
+    expect(wrapper.findAll('.subtitle').length).toBe(2);
     expect(wrapper.find('.subtitle').text()).toEqual('WHO AM I?');
   });
 
   it('contains description', () => {
     const wrapper: Wrapper<HeadHero> = createWrapper(HeadHero);
-    expect(wrapper.findAll('.description').length).toBe(1);
+    expect(wrapper.findAll('.description').length).toBe(2);
   });
 });

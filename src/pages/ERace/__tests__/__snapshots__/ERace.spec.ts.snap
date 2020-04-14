@@ -2,25 +2,21 @@
 
 exports[`ERace should render as expected 1`] = `
 <div
-  class="erace"
+  class="erace columns"
 >
   <iframe
     allowfullscreen="allowfullscreen"
-    class="frame-stream"
+    class="frame-stream column is-10-desktop is-8-tablet is-12-mobile"
     frameborder="0"
-    height="768"
     scrolling="no"
     src="https://player.twitch.tv/?channel=asraces"
-    width="674"
   />
    
   <iframe
-    cleass="frame-chat"
+    class="frame-chat column is-2-desktop is-4-tablet is-hidden-mobile"
     frameborder="0"
-    height="500"
     scrolling="no"
-    src="https://www.twitch.tv/embed/asraces/chat"
-    width="350"
+    src="https://www.twitch.tv/embed/asraces/chat?darkpopout"
   />
 </div>
 `;

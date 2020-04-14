@@ -25,6 +25,7 @@ import { Component, Vue } from 'vue-property-decorator';
 import HeadHero from './HeadHero/HeadHero.vue';
 import HomeCard from '../../components/HomeCard/HomeCard.vue';
 import SquareCard from './SquareCard/SquareCard.vue';
+
 import {
   homeCards, squareCards, ICard, ISquareItem,
 } from './homeCardItems';
@@ -56,6 +57,6 @@ export default class Home extends Vue {
   border-right: 3px solid #ff0000;
 }
 .square-container {
-    border-right: 3px solid #ff0000;
+  border-right: 3px solid #ff0000;
 }
 </style>

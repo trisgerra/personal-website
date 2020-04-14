@@ -1,81 +1,135 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home should render as expected 1`] = `
-<div
-  class="container is-hidden-touch"
->
+<div>
   <div
-    class="absolute columns"
+    class="container desktop is-hidden-touch"
   >
-    <div>
-      <img
-        alt="profile image"
-        class="profile"
-        src="../../../assets/profile.jpg"
-      />
+    <div
+      class="absolute columns"
+    >
+      <div>
+        <img
+          alt="profile image"
+          class="profile"
+          src="../../../assets/profile2.jpg"
+        />
+      </div>
+       
+      <div
+        class="column text-container"
+      >
+        <h2
+          class="title"
+        >
+          Andrea DG &lt;website/&gt;
+        </h2>
+         
+        <h3
+          class="subtitle"
+        >
+          WHO AM I?
+        </h3>
+         
+        <p
+          class="description"
+        >
+          I'm 
+          <b>
+            simply
+          </b>
+           a Software developer with a passion for 
+          <b>
+            new technologies
+          </b>
+           and the 
+          <b>
+            design
+          </b>
+           .
+        </p>
+      </div>
     </div>
      
-    <div
-      class="column text-container"
+    <nav
+      class="columns"
     >
-      <h2
-        class="title"
-      >
-        Andrea DG &lt;website/&gt;
-      </h2>
+      <div
+        class="column first"
+      />
        
-      <h3
-        class="subtitle"
-      >
-        WHO AM I?
-      </h3>
+      <div
+        class="column"
+      />
        
-      <p
-        class="description"
-      >
-        I'm 
-        <b>
-          simply
-        </b>
-         a Software developer with a passion for 
-        <b>
-          new technologies
-        </b>
-         and the 
-        <b>
-          design
-        </b>
-         .
-      </p>
-    </div>
+      <div
+        class="column"
+      />
+       
+      <div
+        class="column"
+      />
+       
+      <div
+        class="column"
+      />
+       
+      <div
+        class="column"
+      />
+    </nav>
   </div>
    
-  <nav
-    class="columns"
+  <div
+    class="container mobile is-hidden-desktop"
   >
     <div
-      class="column first"
-    />
-     
-    <div
-      class="column"
-    />
-     
-    <div
-      class="column"
-    />
-     
-    <div
-      class="column"
-    />
-     
-    <div
-      class="column"
-    />
-     
-    <div
-      class="column"
-    />
-  </nav>
+      class="columns"
+    >
+      <div
+        class="column is-12-mobile"
+      >
+        <img
+          alt="profile image"
+          class="profile-mobile"
+          src="../../../assets/profile2.jpg"
+        />
+      </div>
+       
+      <div
+        class="column text-container"
+      >
+        <h2
+          class="title"
+        >
+          Andrea DG &lt;website/&gt;
+        </h2>
+         
+        <h3
+          class="subtitle"
+        >
+          WHO AM I?
+        </h3>
+         
+        <p
+          class="description"
+        >
+          I'm 
+          <b>
+            simply
+          </b>
+           a Software developer with a passion for 
+          <b>
+            new technologies
+          </b>
+           and the 
+          <b>
+            design
+          </b>
+           .
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 `;
