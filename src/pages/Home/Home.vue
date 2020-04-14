@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <head-hero></head-hero>
+    <home-header/>
     <div class="card-container">
       <div class="columns">
         <div v-for="card in cards" v-bind:key="card.cardName" class="column home-card">
@@ -10,8 +10,8 @@
     </div>
     <div class="square-container">
       <div v-bind:key="index" v-for="(row, index) in squares" class="square-row">
-        <div class="columns">
-          <div v-for="item in row" v-bind:key="item.title" class="column square-card">
+        <div class="columns is-mobile">
+          <div v-for="item in row" v-bind:key="item.title" class="column is-3">
             <square-card :item="item"></square-card>
           </div>
         </div>
@@ -22,7 +22,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HeadHero from './HeadHero/HeadHero.vue';
+import HomeHeader from './HomeHeader/HomeHeader.vue';
 import HomeCard from '../../components/HomeCard/HomeCard.vue';
 import SquareCard from './SquareCard/SquareCard.vue';
 
@@ -32,7 +32,7 @@ import {
 
 @Component({
   components: {
-    HeadHero,
+    HomeHeader,
     HomeCard,
     SquareCard,
   },

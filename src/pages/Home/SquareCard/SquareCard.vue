@@ -20,8 +20,8 @@ export default class SquareCard extends Vue {
 
 h3 {
     color: #B3B3B3;
-    font-weight: 900;
-    font-size: 39px;
+    font-weight: bold;
+    font-size: 2vw;
     text-align: center;
     padding-top: 40%;
     padding-bottom: 40%;
