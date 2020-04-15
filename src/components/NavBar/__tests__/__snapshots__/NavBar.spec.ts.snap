@@ -70,6 +70,16 @@ exports[`NavBar should render as expected 1`] = `
           ERace
         </a>
       </a>
+      <a
+        class="menu-item"
+        href="#/fitness"
+      >
+        <a
+          class="navbar-item navbar-router"
+        >
+          Fitness
+        </a>
+      </a>
     </div>
   </div>
 </nav>

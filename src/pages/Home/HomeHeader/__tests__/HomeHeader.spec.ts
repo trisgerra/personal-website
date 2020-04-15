@@ -13,8 +13,8 @@ describe('Home', () => {
     const wrapper: Wrapper<HomeHeader> = createWrapper(HomeHeader);
     expect(wrapper.findAll('.title').length).toBe(1);
     expect(wrapper.findAll('.title-mobile').length).toBe(1);
-    expect(wrapper.find('.title').text()).toEqual('Andrea DG <website/>');
-    expect(wrapper.find('.title-mobile').text()).toEqual('Andrea DG <website/>');
+    expect(wrapper.find('.title').text()).toEqual('Welcome to my website');
+    expect(wrapper.find('.title-mobile').text()).toEqual('Welcome to my website');
   });
 
   it('contains subtitle', () => {
