@@ -1,6 +1,6 @@
 import { Wrapper } from '@vue/test-utils';
-import SquareCard from '../SquareCard.vue';
 import createWrapper from '@/utils/CreateWrapper';
+import SquareCard from '../SquareCard.vue';
 
 describe('HomeCard', () => {
   const wrapper: Wrapper<SquareCard> = createWrapper(SquareCard, {

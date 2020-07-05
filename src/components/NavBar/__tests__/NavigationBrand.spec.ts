@@ -1,6 +1,6 @@
 import { Wrapper } from '@vue/test-utils';
-import NavigationBrand from '../NavigationBrand.vue';
 import createWrapper from '@/utils/CreateWrapper';
+import NavigationBrand from '../NavigationBrand.vue';
 
 describe('NavigationBrand', () => {
   const switchActiveSpy = jest.fn();

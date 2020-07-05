@@ -3,7 +3,9 @@
     <div class="container desktop is-hidden-touch">
       <div class="absolute columns">
         <div>
-          <img loading="lazy" class="profile" src="../../../assets/profile2.jpg" alt="profile image" />
+          <img loading="lazy" class="profile"
+               src="../../../assets/profile2.jpg"
+               alt="profile image" />
         </div>
         <div class="column text-container">
           <h2 class="title">{{title}}</h2>

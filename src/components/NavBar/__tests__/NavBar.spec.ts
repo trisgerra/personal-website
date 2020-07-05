@@ -1,9 +1,9 @@
 import { Wrapper } from '@vue/test-utils';
+import createWrapper from '@/utils/CreateWrapper';
 import NavBar from '../NavBar.vue';
 import NavigationBrand from '../NavigationBrand.vue';
 import NavigationMenu from '../NavigationMenu.vue';
 
-import createWrapper from '@/utils/CreateWrapper';
 
 describe('NavBar', () => {
   it('should render as expected', () => {

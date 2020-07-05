@@ -2,7 +2,7 @@
   <div :class="this.navBarMenuClass">
     <div class="navbar-start">
       <router-link
-        v-for="route in routes"
+        v-for="route in navRoutes"
         v-bind:key="route.name"
         class="menu-item"
         :to="route.path">
@@ -20,7 +20,11 @@ import { IRoute, routes } from '../../router';
 export default class NavigationMenu extends Vue {
   @Prop() isActive!: Function;
 
-  routes: IRoute[] = routes;
+
+  get navRoutes() {
+    const routesToRender = routes.filter(item => item.name !== 'Terms and conditions');
+    return routesToRender;
+  }
 
   get navBarMenuClass(): string {
     return this.isActive ? 'navbar-menu is-active' : 'navbar-menu';

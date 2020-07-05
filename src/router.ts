@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import PrivacyPolicy from '@/pages/ERace/PrivacyPolicy.vue';
 import Home from './pages/Home/Home.vue';
 import ERace from './pages/ERace/ERace.vue';
 import Fitness from './pages/Fitness/Fitness.vue';
@@ -27,6 +28,11 @@ export const routes: IRoute[] = [
     path: '/fitness',
     name: 'Fitness',
     component: Fitness,
+  },
+  {
+    path: '/terms-and-condition',
+    name: 'Terms and conditions',
+    component: PrivacyPolicy,
   },
 ];
 

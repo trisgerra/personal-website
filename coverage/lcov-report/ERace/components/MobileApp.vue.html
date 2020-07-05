@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for components/NavBar/NavigationMenu.vue</title>
+    <title>Code coverage report for ERace/components/MobileApp.vue</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -16,7 +16,7 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../index.html">All files</a> / <a href="index.html">components/NavBar</a> NavigationMenu.vue
+      <a href="../../index.html">All files</a> / <a href="index.html">ERace/components</a> MobileApp.vue
     </h1>
     <div class='clearfix'>
     </div>
@@ -98,7 +98,9 @@
 73
 74
 75
-76</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+76
+77
+78</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -113,25 +115,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">50x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -174,78 +178,80 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
-  &lt;div :class="this.navBarMenuClass"&gt;
-    &lt;div class="navbar-start"&gt;
-      &lt;router-link
-        v-for="route in navRoutes"
-        v-bind:key="route.name"
-        class="menu-item"
-        :to="route.path"&gt;
-        &lt;a class="navbar-item navbar-router"&gt;{{route.name}}&lt;/a&gt;
-      &lt;/router-link&gt;
-    &lt;/div&gt;
+  &lt;div class="app"&gt;
+      &lt;div id="race1" class="container-mobile columns"&gt;
+        &lt;a class="column is-6" target="_blank" href="https://www.facebook.com/asraces/videos/703386320433694/"&gt;
+          &lt;img src="../../../assets/mobile-store/iphones.png"/&gt;
+        &lt;/a&gt;
+        &lt;div id="race2"  class="column is-6"&gt;
+          &lt;div class="column is-6 row google-play"&gt;
+            &lt;h1 class="title"&gt;
+              ASRaces Mobile
+            &lt;/h1&gt;
+            &lt;h2 class="subtitle"&gt;
+              Track your performance and improve your E-Driver skills
+            &lt;/h2&gt;
+          &lt;/div&gt;
+          &lt;div class="column is-6 row google-play"&gt;
+&nbsp;
+          &lt;a target="_blank" href="https://play.google.com/store/apps/details?id=com.tanteappios.timeonlap&amp;gl=SK"&gt;
+            &lt;img src="../../../assets/mobile-store/googleplay.png" alt="Google play"/&gt;
+          &lt;/a&gt;
+          &lt;a target="_blank" href="https://apps.apple.com/us/app/asraces/id1521736687?ign-mpt=uo%3D2"&gt;
+            &lt;img src="../../../assets/mobile-store/appstore.png" alt="Google play"/&gt;
+          &lt;/a&gt;
+            &lt;button class="button terms-and-cond"&gt;Terms &amp; Conditions&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 &nbsp;
 &lt;script lang="ts"&gt;
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import { IRoute, routes } from '../../router';
+import { Component, Vue } from 'vue-property-decorator';
 &nbsp;
+require('../../../assets/mobile-store/googleplay.png');
 @Component
-export default class NavigationMenu extends Vue {
-  @Prop() isActive!: Function;
+export default class Races extends Vue {
 &nbsp;
-&nbsp;
-  get navRoutes() {
-    const routesToRender = routes.filter(item =&gt; item.name !== 'Terms and conditions');
-    return routesToRender;
-  }
-&nbsp;
-  get navBarMenuClass(): string {
-    return this.isActive ? 'navbar-menu is-active' : 'navbar-menu';
-  }
 }
 &lt;/script&gt;
 &nbsp;
-&lt;style scoped lang="scss"&gt;
-@import '~bulma/sass/utilities/mixins';
+&lt;style lang="scss"&gt;
+.container-mobile {
+  background:#fff;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  margin-left: 0px;
+}
 &nbsp;
-.navbar-router {
-  background-color: white;
-  font-weight: 400;
-  height: 100%;
-  color: #151616;
-  &amp;:hover {
-    color: #151616;
-    font-weight: 600;
+.mobile{
+  border-left: 3px solid #ff0000;
+  border-bottom: 3px solid #ff0000;
+}
+&nbsp;
+.google-play {
+  margin-top: 100px;
+}
+&nbsp;
+ .columns:last-child {
+    margin-bottom: 0px;
   }
-}
 &nbsp;
-.router-link-exact-active {
-  a {
-    background-color: white;
-    font-weight: 600;
+&nbsp;
+ .terms-and-cond {
+   color: white;
+   background-color: #FF5252;
+ }
+.is-mobile{
+  background-color: #fff;
+  h1 {
+    color: #111;
   }
-}
-@include desktop {
-  .navbar-router {
-      border-bottom: 3px solid white;
-      &amp;:hover {
-        border-bottom: 3px solid #151616;
-      }
-    }
-    .router-link-exact-active {
-        border-bottom: 3px solid #151616;
-    }
-}
-&nbsp;
-@include touch {
-  .navbar-router {
-      border-left: 2px solid white;
-      &amp;:hover {
-        border-left: 2px solid #151616;
-      }
-    }
+  h2 {
+    color: #222;
+  }
 }
 &lt;/style&gt;
 &nbsp;</pre></td></tr>
@@ -254,7 +260,7 @@ export default class NavigationMenu extends Vue {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Jul 05 2020 22:46:46 GMT+0200 (Central European Summer Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Jul 05 2020 22:18:32 GMT+0200 (Central European Summer Time)
 </div>
 </div>
 <script src="../../prettify.js"></script>

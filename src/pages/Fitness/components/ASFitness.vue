@@ -19,10 +19,22 @@
             </div>
         </section>
          <div class="fitness-picture columns">
-          <img class="column is-3 fit-image" loading="lazy" src="../../../assets/fitness/fitness3.jpg" alt="Fitness3"/>
-          <img class="column is-3 fit-image" loading="lazy" src="../../../assets/fitness/fitness2.jpg" alt="Fitness2"/>
-          <img class="column is-3 fit-image" loading="lazy" src="../../../assets/fitness/fitness4.jpg" alt="Fitness1"/>
-          <img class="column is-3 fit-image" loading="lazy" src="../../../assets/fitness/fitness1.jpg" alt="Fitness4"/>
+          <img class="column is-3 fit-image"
+               loading="lazy"
+               src="../../../assets/fitness/fitness3.jpg"
+               alt="Fitness3"/>
+          <img class="column is-3 fit-image"
+               loading="lazy"
+               src="../../../assets/fitness/fitness2.jpg"
+               alt="Fitness2"/>
+          <img class="column is-3 fit-image"
+               loading="lazy"
+               src="../../../assets/fitness/fitness4.jpg"
+               alt="Fitness1"/>
+          <img class="column is-3 fit-image"
+               loading="lazy"
+               src="../../../assets/fitness/fitness1.jpg"
+               alt="Fitness4"/>
         </div>
     </div>
 </template>

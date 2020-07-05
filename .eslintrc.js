@@ -12,7 +12,7 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'import/no-extraneous-dependencies': ['off', { devDependencies: false, optionalDependencies: false, peerDependencies: false }],
-    'class-methods-use-this': 'off'
+    'class-methods-use-this': 'off',
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',

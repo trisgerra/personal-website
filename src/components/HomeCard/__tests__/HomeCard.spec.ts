@@ -1,6 +1,6 @@
 import { Wrapper } from '@vue/test-utils';
-import HomeCard from '../HomeCard.vue';
 import createWrapper from '@/utils/CreateWrapper';
+import HomeCard from '../HomeCard.vue';
 import { homeCards } from '../../../pages/Home/homeCardItems';
 
 describe('HomeCard', () => {
