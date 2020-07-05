@@ -13,8 +13,12 @@
         </div>
       </section>
       <div class="twitch columns">
-        <iframe class="frame-stream column is-10-desktop is-8-tablet is-12-mobile" src="https://player.twitch.tv/?channel=asraces" frameborder="0" allowfullscreen="no" scrolling="no"></iframe>
-        <iframe class="frame-chat column is-2-desktop is-4-tablet is-hidden-mobile" src="https://www.twitch.tv/embed/asraces/chat?darkpopout" frameborder="0" scrolling="no"></iframe>
+        <iframe class="frame-stream column is-10-desktop is-8-tablet is-12-mobile" src="https://player.twitch.tv/?channel=asraces&parent=stage-adg.herokuapp.com" frameborder="0" allowfullscreen="no" scrolling="no"/>
+        <iframe
+          class="frame-chat column is-2-desktop is-4-tablet is-hidden-mobile"
+          id="chat_embed"
+          src="https://www.twitch.tv/embed/asraces/chat?parent=stage-adg.herokuapp.com"
+         />
       </div>
   </div>
 </template>
