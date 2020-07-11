@@ -14,21 +14,21 @@ export interface IRoute {
 }
 
 export const routes: IRoute[] = [
+  // {
+  //   path: '/',
+  //   name: 'Home',
+  //   component: Home,
+  // },
   {
     path: '/',
-    name: 'Home',
-    component: Home,
-  },
-  {
-    path: '/erace',
     name: 'ERace',
     component: ERace,
   },
-  {
-    path: '/fitness',
-    name: 'Fitness',
-    component: Fitness,
-  },
+  // {
+  //   path: '/fitness',
+  //   name: 'Fitness',
+  //   component: Fitness,
+  // },
   {
     path: '/terms-and-condition',
     name: 'Terms and conditions',
