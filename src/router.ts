@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import PrivacyPolicy from '@/pages/ERace/PrivacyPolicy.vue';
+import PrivacyPolicy from '@/pages/Portfolio/PrivacyPolicy.vue';
 import Home from './pages/Home/Home.vue';
-import ERace from './pages/ERace/ERace.vue';
+import Portfolio from './pages/Portfolio/Portfolio.vue';
 import Fitness from './pages/Fitness/Fitness.vue';
 
 Vue.use(Router);
@@ -14,15 +14,15 @@ export interface IRoute {
 }
 
 export const routes: IRoute[] = [
-  // {
-  //   path: '/',
-  //   name: 'Home',
-  //   component: Home,
-  // },
   {
     path: '/',
-    name: 'ERace',
-    component: ERace,
+    name: 'Home',
+    component: Home,
+  },
+  {
+    path: '/portfolio',
+    name: 'Portfolio',
+    component: Portfolio,
   },
   // {
   //   path: '/fitness',
@@ -30,7 +30,7 @@ export const routes: IRoute[] = [
   //   component: Fitness,
   // },
   {
-    path: '/terms-and-condition',
+    path: '/asraces/terms-and-condition',
     name: 'Terms and conditions',
     component: PrivacyPolicy,
   },

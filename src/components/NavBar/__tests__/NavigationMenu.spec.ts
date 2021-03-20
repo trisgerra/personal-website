@@ -11,6 +11,6 @@ describe('NavigationMenu', () => {
 
   it('should render as expected', () => {
     const wrapper: Wrapper<NavigationMenu> = createWrapper(NavigationMenu);
-    expect(wrapper.findAll('.menu-item').length).toBe(4);
+    expect(wrapper.findAll('.menu-item').length).toBe(3);
   });
 });

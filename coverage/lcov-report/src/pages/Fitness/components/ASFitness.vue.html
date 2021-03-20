@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/components/NavBar/NavigationMenu.vue</title>
+    <title>Code coverage report for src/pages/Fitness/components/ASFitness.vue</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../../prettify.css" />
-    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../../sort-arrow-sprite.png);
+            background-image: url(../../../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -16,12 +16,12 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../../index.html">All files</a> / <a href="index.html">src/components/NavBar</a> NavigationMenu.vue
+      <a href="../../../../index.html">All files</a> / <a href="index.html">src/pages/Fitness/components</a> ASFitness.vue
     </h1>
     <div class='clearfix'>
     </div>
   </div>
-  <div class='status-line high'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -98,7 +98,11 @@
 73
 74
 75
-76</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+76
+77
+78
+79
+80</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -113,21 +117,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">40x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -140,6 +129,25 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -174,77 +182,81 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
-  &lt;div :class="this.navBarMenuClass"&gt;
-    &lt;div class="navbar-start"&gt;
-      &lt;router-link
-        v-for="route in navRoutes"
-        v-bind:key="route.name"
-        class="menu-item"
-        :to="route.path"&gt;
-        &lt;a class="navbar-item navbar-router"&gt;{{route.name}}&lt;/a&gt;
-      &lt;/router-link&gt;
+    &lt;div class="asfitness"&gt;
+        &lt;section class="hero is-fitness is-medium"&gt;
+            &lt;div class="hero-body is-bold"&gt;
+            &lt;div class="container is-fluid"&gt;
+                &lt;h1 class="title"&gt;
+                Join our Fit-Family
+                &lt;/h1&gt;
+                &lt;h2 class="subtitle"&gt;
+                In this group we are all friends, feel free to ask all the questions you want
+                &lt;/h2&gt;
+                &lt;a target="_blank" href="https://www.facebook.com/groups/1633939113524736"&gt;
+                    &lt;button class="button is-link facebook-group"&gt;Take me to the Group&lt;/button&gt;
+                &lt;/a&gt;
+                &lt;a target="_blank" href="https://www.facebook.com/AndreaDGFitness"&gt;
+                    &lt;button class="button is-link facebook-page"&gt;Take me to the Page&lt;/button&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+         &lt;div class="fitness-picture columns"&gt;
+          &lt;img class="column is-3 fit-image"
+               loading="lazy"
+               src="../../../assets/fitness/fitness3.jpg"
+               alt="Fitness3"/&gt;
+          &lt;img class="column is-3 fit-image"
+               loading="lazy"
+               src="../../../assets/fitness/fitness2.jpg"
+               alt="Fitness2"/&gt;
+          &lt;img class="column is-3 fit-image"
+               loading="lazy"
+               src="../../../assets/fitness/fitness4.jpg"
+               alt="Fitness1"/&gt;
+          &lt;img class="column is-3 fit-image"
+               loading="lazy"
+               src="../../../assets/fitness/fitness1.jpg"
+               alt="Fitness4"/&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
 &lt;/template&gt;
 &nbsp;
 &lt;script lang="ts"&gt;
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import { IRoute, routes } from '../../router';
+<span class="cstat-no" title="statement not covered" >import { Component, Vue } from 'vue-property-decorator';</span>
 &nbsp;
 @Component
-export default class NavigationMenu extends Vue {
-  @Prop() isActive!: Function;
+<span class="cstat-no" title="statement not covered" >export default class Fitness extends Vue {</span>
 &nbsp;
-&nbsp;
-  get navRoutes() {
-    const routesToRender = routes.filter(item =&gt; item.name !== 'Terms and conditions');
-    return routesToRender;
-  }
-&nbsp;
-  get navBarMenuClass(): string {
-    return this.isActive ? 'navbar-menu is-active' : 'navbar-menu';
-  }
 }
 &lt;/script&gt;
 &nbsp;
-&lt;style scoped lang="scss"&gt;
-@import '~bulma/sass/utilities/mixins';
-&nbsp;
-.navbar-router {
-  background-color: white;
-  font-weight: 400;
-  height: 100%;
-  color: #151616;
-  &amp;:hover {
-    color: #151616;
-    font-weight: 600;
-  }
+&lt;style lang="scss"&gt;
+.fitness-picture {
+    padding: 16px;
 }
 &nbsp;
-.router-link-exact-active {
-  a {
-    background-color: white;
-    font-weight: 600;
-  }
-}
-@include desktop {
-  .navbar-router {
-      border-bottom: 3px solid white;
-      &amp;:hover {
-        border-bottom: 3px solid #151616;
-      }
+.is-fitness {
+    background-color: #3B5998;
+    h1 {
+        color:white;
     }
-    .router-link-exact-active {
-        border-bottom: 3px solid #151616;
+    h2{
+        color:white;
     }
-}
+    .facebook-group {
+        background-color: #20B2AA;
+        &amp;:hover {
+            background-color: #79D0CC;
+        }
+    }
 &nbsp;
-@include touch {
-  .navbar-router {
-      border-left: 2px solid white;
-      &amp;:hover {
-        border-left: 2px solid #151616;
-      }
+    .facebook-page {
+        margin-left: 16px;
+        background-color: #20B2AA;
+        &amp;:hover {
+            background-color: #79D0CC;
+        }
     }
 }
 &lt;/style&gt;
@@ -254,10 +266,10 @@ export default class NavigationMenu extends Vue {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Mar 20 2021 16:49:51 GMT+0100 (Central European Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Mar 20 2021 16:49:33 GMT+0100 (Central European Standard Time)
 </div>
 </div>
-<script src="../../../prettify.js"></script>
+<script src="../../../../prettify.js"></script>
 <script>
 window.onload = function () {
         if (typeof prettyPrint === 'function') {
@@ -265,6 +277,6 @@ window.onload = function () {
         }
 };
 </script>
-<script src="../../../sorter.js"></script>
+<script src="../../../../sorter.js"></script>
 </body>
 </html>
