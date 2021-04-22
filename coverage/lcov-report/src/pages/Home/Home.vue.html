@@ -85,7 +85,76 @@
 60
 61
 62
-63</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -125,9 +194,54 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -152,16 +266,28 @@
     &lt;home-header/&gt;
     &lt;div class="card-container"&gt;
       &lt;div class="columns"&gt;
-        &lt;div v-for="card in cards" v-bind:key="card.cardName" class="column home-card"&gt;
-          &lt;home-card :card="card"&gt;&lt;/home-card&gt;
+        &lt;div v-for="card in cards"
+        v-bind:key="card.cardName"
+        :id="card.id"
+        class="column home-card"
+        v-observe-visibility="visibilityChanged"&gt;
+           &lt;transition :name="`home-card-${card.id}`"&gt;
+             &lt;home-card :card="card" v-if="visibleCards.indexOf(card.id) !== -1"&gt;&lt;/home-card&gt;
+           &lt;/transition&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="square-container"&gt;
       &lt;div v-bind:key="index" v-for="(row, index) in squares" class="square-row"&gt;
         &lt;div class="columns is-mobile"&gt;
-          &lt;div v-for="item in row" v-bind:key="item.title" class="column is-3"&gt;
-            &lt;square-card :item="item"&gt;&lt;/square-card&gt;
+          &lt;div v-for="item in row"
+               v-bind:key="item.title"
+               :id="item.id"
+               v-observe-visibility="visibilityChanged"
+               class="column is-3 social-card"&gt;
+              &lt;transition name="square-card"&gt;
+                &lt;square-card :item="item" v-if="visibleCards.indexOf(item.id) !== -1"/&gt;
+              &lt;/transition&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -187,9 +313,17 @@ import {
   },
 })
 export default class Home extends Vue {
+  visibleCards: string[] = [];
+&nbsp;
   cards: ICard[] = homeCards;
 &nbsp;
   squares: ISquareItem[][] = squareCards;
+&nbsp;
+<span class="fstat-no" title="function not covered" >  visibilityChanged(isVisible: boolean, entry:any) {</span>
+<span class="cstat-no" title="statement not covered" >    if (isVisible &amp;&amp; this.visibleCards.indexOf(entry.target.className) === -1) {</span>
+<span class="cstat-no" title="statement not covered" >      this.visibleCards.push(entry.target.id);</span>
+    }
+  }
 }
 &lt;/script&gt;
 &nbsp;
@@ -208,6 +342,43 @@ export default class Home extends Vue {
 .square-container {
   border-right: 3px solid #ff0000;
 }
+&nbsp;
+.home-card{
+  min-height: 100px;
+}
+&nbsp;
+.social-card{
+  min-height: 100px;
+}
+&nbsp;
+.home-card-experience-enter{
+  opacity: 0;
+  transform: translateX(-300px);
+}
+&nbsp;
+.home-card-skills-enter{
+  opacity: 0;
+  transform: translateY(30px);
+}
+&nbsp;
+.home-card-hobbies-enter{
+  opacity: 0;
+  transform: translateX(300px);
+}
+&nbsp;
+.square-card-enter{
+  opacity: 0;
+  transform: translateY(300px);
+}
+&nbsp;
+.home-card-experience-enter-active,
+.home-card-skills-enter-active,
+.home-card-hobbies-enter-active,
+.square-card-enter-active{
+  transition: all .8s ease;
+  transition-delay: .1s;
+}
+&nbsp;
 &lt;/style&gt;
 &nbsp;</pre></td></tr>
 </table></pre>
@@ -215,7 +386,7 @@ export default class Home extends Vue {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Mar 20 2021 16:49:51 GMT+0100 (Central European Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Apr 23 2021 01:35:58 GMT+0200 (Central European Summer Time)
 </div>
 </div>
 <script src="../../../prettify.js"></script>

@@ -10,15 +10,4 @@ describe('Home', () => {
     const wrapper: Wrapper<Home> = createWrapper(Home);
     expect(wrapper.findAll(HomeHeader).length).toBe(1);
   });
-
-  it('contains the correct number of CardItem', () => {
-    const wrapper: Wrapper<Home> = createWrapper(Home);
-    expect(wrapper.findAll(HomeCard).length).toBe(3);
-  });
-
-  it('contains the correct number of Square Item', () => {
-    const wrapper: Wrapper<Home> = createWrapper(Home);
-    expect(wrapper.findAll('.square-row').length).toBe(1);
-    expect(wrapper.findAll(SquareCard).length).toBe(4);
-  });
 });

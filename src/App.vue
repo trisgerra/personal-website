@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav-bar/>
+    <nav-bar class="navbar"/>
     <router-view class="router-view"/>
   </div>
 </template>
@@ -17,3 +17,10 @@ export default class App extends Vue {
 
 }
 </script>
+
+<style lang="scss" scoped>
+.navbar {
+  position: fixed;
+  width: 100vw;
+}
+</style>

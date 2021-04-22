@@ -70,6 +70,16 @@ exports[`NavigationMenu should render as expected 1`] = `
           Portfolio
         </a>
       </a>
+      <a
+        class="menu-item"
+        href="#/blog"
+      >
+        <a
+          class="navbar-item navbar-router"
+        >
+          Blog
+        </a>
+      </a>
     </div>
   </div>
 </nav>

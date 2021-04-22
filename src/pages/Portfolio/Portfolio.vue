@@ -1,18 +1,34 @@
 <template>
   <div class="portfolio">
-    <mobile-app/>
+    <ASRaces class="asraces"/>
+    <binance-bot class="binance-bot"/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import MobileApp from './components/MobileApp.vue';
+import ASRaces from './components/ASRaces.vue';
+import BinanceBot from './components/BinanceBot.vue';
+
 @Component({
   components: {
-    MobileApp
+    ASRaces,
+    BinanceBot,
   },
 })
 export default class Portfolio extends Vue {
 
 }
 </script>
+
+<style scoped>
+.asraces {
+    border-left: 3px solid #ff0000;
+    border-bottom: 3px solid #ff0000;
+}
+
+.binance-bot {
+    border-right: 3px solid #ff0000;
+    border-bottom: 3px solid #ff0000;
+}
+</style>

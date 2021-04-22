@@ -4,12 +4,14 @@ interface IItem {
 }
 
 export interface ICard {
+    id:string;
     name: string;
     items: IItem[],
     isDark: boolean
 }
 
 export interface ISquareItem {
+  id: string;
   title: string;
   color: string;
   url: string;
@@ -110,16 +112,19 @@ const hobbiesList : IItem[] = [
 
 export const homeCards : ICard[] = [
   {
+    id: 'experience',
     name: 'WORK EXPERIENCE',
     items: experienceList,
     isDark: true,
   },
   {
+    id: 'skills',
     name: 'SKILLS',
     items: skillsList,
     isDark: false,
   },
   {
+    id: 'hobbies',
     name: 'HOBBIES',
     items: hobbiesList,
     isDark: true,
@@ -128,21 +133,25 @@ export const homeCards : ICard[] = [
 
 export const squareCards : ISquareItem[][] = [
   [{
+    id: 'git',
     title: 'GITHUB',
     color: '#151616',
     url: 'https://github.com/trisgerra',
   },
   {
+    id: 'linkedin',
     title: 'LINKEDIN',
     color: '#2D2F2F',
     url: 'https://www.linkedin.com/in/a-digiacomo/',
   },
   {
+    id: 'twitch',
     title: 'TWITCH',
     color: '#494A4A',
     url: 'https://www.twitch.tv/asraces',
   },
   {
+    id: 'contact',
     title: 'CONTACT',
     color: '#2D2F2F',
     url: 'mailto:andrea.digiacomo@live.it',

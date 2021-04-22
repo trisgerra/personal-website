@@ -169,7 +169,69 @@
 144
 145
 146
-147</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -215,11 +277,35 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -319,15 +405,30 @@
   &lt;div&gt;
     &lt;div class="container desktop is-hidden-touch"&gt;
       &lt;div class="absolute columns"&gt;
-        &lt;div&gt;
-          &lt;img loading="lazy" class="profile"
-               src="../../../assets/profile2.jpg"
-               alt="profile image" /&gt;
-        &lt;/div&gt;
+        &lt;transition appear-class="profile-img"
+        appear-to-class="profile-img-to"
+        appear-active-class="profile-img-active" appear&gt;
+          &lt;div&gt;
+            &lt;img loading="lazy"
+                class="profile"
+                src="../../../assets/profile2.jpg"
+                alt="profile image" /&gt;
+          &lt;/div&gt;
+        &lt;/transition&gt;
         &lt;div class="column text-container"&gt;
-          &lt;h2 class="title"&gt;{{title}}&lt;/h2&gt;
-          &lt;h3 class="subtitle"&gt;{{subtitle}}&lt;/h3&gt;
-          &lt;p class="description" v-html="description"&gt;&lt;/p&gt;
+          &lt;transition appear-class="title-anim"
+            appear-to-class="title-anim-to"
+            appear-active-class="title-anim-active" appear&gt;
+            &lt;h2 class="title"&gt;{{title}}&lt;/h2&gt;
+          &lt;/transition&gt;
+           &lt;transition appear-class="subtitle-anim"
+            appear-to-class="subtitle-anim-to"
+            appear-active-class="subtitle-anim-active" appear&gt;
+            &lt;div&gt;
+              &lt;h3 class="subtitle"&gt;{{subtitle}}&lt;/h3&gt;
+              &lt;p class="description" v-html="description"&gt;&lt;/p&gt;
+            &lt;/div&gt;
+           &lt;/transition&gt;
         &lt;/div&gt;
       &lt;/div&gt;
       &lt;nav class="columns"&gt;
@@ -340,6 +441,9 @@
       &lt;/nav&gt;
     &lt;/div&gt;
     &lt;div class="container mobile is-hidden-desktop"&gt;
+      &lt;transition appear-class="profile-img"
+        appear-to-class="profile-img-to"
+        appear-active-class="profile-img-active" appear&gt;
       &lt;div class="columns"&gt;
         &lt;div class="column is-12-mobile"&gt;
           &lt;img class="profile-mobile" src="../../../assets/profile2.jpg" alt="profile image" /&gt;
@@ -350,6 +454,7 @@
           &lt;p class="description-mobile" v-html="description"&gt;&lt;/p&gt;
         &lt;/div&gt;
       &lt;/div&gt;
+      &lt;/transition&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/template&gt;
@@ -374,7 +479,7 @@ export default class HomeHeader extends Vue {
 .desktop {
   border-left: 3px solid #FF0000;
   position: relative;
-  max-width: 1920px;
+  max-width: 100%;
   border-bottom: 1px solid #dfdfdf;
 &nbsp;
   .column {
@@ -459,7 +564,31 @@ export default class HomeHeader extends Vue {
   }
 }
 &nbsp;
+.profile-img {
+  opacity: 0;
+  transform: translateX(-300px);
+}
 &nbsp;
+.title-anim {
+  transform: translateX(800px);
+}
+&nbsp;
+.subtitle-anim {
+  transform: translateY(200px);
+  opacity: 0;
+}
+&nbsp;
+.title-anim-active {
+    transition: all .5s ease;
+}
+&nbsp;
+.profile-img-active {
+  transition: all .3s ease;
+}
+&nbsp;
+.subtitle-anim-active {
+    transition: all .8s ease;
+}
 &lt;/style&gt;
 &nbsp;</pre></td></tr>
 </table></pre>
@@ -467,7 +596,7 @@ export default class HomeHeader extends Vue {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Mar 20 2021 16:49:51 GMT+0100 (Central European Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Apr 23 2021 01:35:58 GMT+0200 (Central European Summer Time)
 </div>
 </div>
 <script src="../../../../prettify.js"></script>

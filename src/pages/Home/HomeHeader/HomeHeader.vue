@@ -2,15 +2,30 @@
   <div>
     <div class="container desktop is-hidden-touch">
       <div class="absolute columns">
-        <div>
-          <img loading="lazy" class="profile"
-               src="../../../assets/profile2.jpg"
-               alt="profile image" />
-        </div>
+        <transition appear-class="profile-img"
+        appear-to-class="profile-img-to"
+        appear-active-class="profile-img-active" appear>
+          <div>
+            <img loading="lazy"
+                class="profile"
+                src="../../../assets/profile2.jpg"
+                alt="profile image" />
+          </div>
+        </transition>
         <div class="column text-container">
-          <h2 class="title">{{title}}</h2>
-          <h3 class="subtitle">{{subtitle}}</h3>
-          <p class="description" v-html="description"></p>
+          <transition appear-class="title-anim"
+            appear-to-class="title-anim-to"
+            appear-active-class="title-anim-active" appear>
+            <h2 class="title">{{title}}</h2>
+          </transition>
+           <transition appear-class="subtitle-anim"
+            appear-to-class="subtitle-anim-to"
+            appear-active-class="subtitle-anim-active" appear>
+            <div>
+              <h3 class="subtitle">{{subtitle}}</h3>
+              <p class="description" v-html="description"></p>
+            </div>
+           </transition>
         </div>
       </div>
       <nav class="columns">
@@ -23,6 +38,9 @@
       </nav>
     </div>
     <div class="container mobile is-hidden-desktop">
+      <transition appear-class="profile-img"
+        appear-to-class="profile-img-to"
+        appear-active-class="profile-img-active" appear>
       <div class="columns">
         <div class="column is-12-mobile">
           <img class="profile-mobile" src="../../../assets/profile2.jpg" alt="profile image" />
@@ -33,6 +51,7 @@
           <p class="description-mobile" v-html="description"></p>
         </div>
       </div>
+      </transition>
     </div>
   </div>
 </template>
@@ -57,7 +76,7 @@ export default class HomeHeader extends Vue {
 .desktop {
   border-left: 3px solid #FF0000;
   position: relative;
-  max-width: 1920px;
+  max-width: 100%;
   border-bottom: 1px solid #dfdfdf;
 
   .column {
@@ -142,5 +161,29 @@ export default class HomeHeader extends Vue {
   }
 }
 
+.profile-img {
+  opacity: 0;
+  transform: translateX(-300px);
+}
 
+.title-anim {
+  transform: translateX(800px);
+}
+
+.subtitle-anim {
+  transform: translateY(200px);
+  opacity: 0;
+}
+
+.title-anim-active {
+    transition: all .5s ease;
+}
+
+.profile-img-active {
+  transition: all .3s ease;
+}
+
+.subtitle-anim-active {
+    transition: all .8s ease;
+}
 </style>

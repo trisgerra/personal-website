@@ -3,7 +3,7 @@ import Router from 'vue-router';
 import PrivacyPolicy from '@/pages/Portfolio/PrivacyPolicy.vue';
 import Home from './pages/Home/Home.vue';
 import Portfolio from './pages/Portfolio/Portfolio.vue';
-import Fitness from './pages/Fitness/Fitness.vue';
+import Blog from './pages/Blog/Blog.vue';
 
 Vue.use(Router);
 
@@ -24,11 +24,11 @@ export const routes: IRoute[] = [
     name: 'Portfolio',
     component: Portfolio,
   },
-  // {
-  //   path: '/fitness',
-  //   name: 'Fitness',
-  //   component: Fitness,
-  // },
+  {
+    path: '/blog',
+    name: 'Blog',
+    component: Blog,
+  },
   {
     path: '/asraces/terms-and-condition',
     name: 'Terms and conditions',

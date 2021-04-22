@@ -77,7 +77,7 @@
       </div>
     </section>
 
-    
+
      <section class="hero is-light">
       <div class="hero-body">
         <p class="title">
